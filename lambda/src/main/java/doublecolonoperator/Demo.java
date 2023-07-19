@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 public class Demo {
     public static void main(String[] args) {
 
-       //Reference to a static method
+        //Reference to a static method
         Calculate s1 = (x,y) -> Calculator.findSum(x,y);
         s1.calculate(10,20);
 
@@ -35,6 +35,14 @@ public class Demo {
 
         Consumer<Integer> display2 = System.out::println;
         display2.accept(50);
+
+
+        BiFunction<MyClass,Integer,Double> v2 = MyClass::method;
+
+        BiFunction<String,String,String> v3 = String::concat;
+
+
+
 
 
 
