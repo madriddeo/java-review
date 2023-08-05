@@ -68,7 +68,14 @@ public class GenericsTest {
 
     }
 
-    // wirte a method that will take list of objects and returns the last element in the list
+    // write a method that will take list of objects and returns the last element in the list
+
+
+    public static <T> T returnLastElement(List<T> personList){
+
+        return personList.get(personList.size()-1);
+
+    }
 
 
 }
