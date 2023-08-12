@@ -8,8 +8,10 @@ public class CarTest {
 
 //        Car car = new Car("Toyota", 150);
 
-        Car car = Car.builder().make("Toyota").build();
-        System.out.println(car);
+//        Car car = Car.builder().make("Toyota").build();
+//        System.out.println(car);
+
+
 
     }
 
