@@ -1,7 +1,11 @@
 package review;
 
+import comparatorinterface.Apple;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Stream;
 
 public class CarTest {
 
@@ -33,6 +37,12 @@ public class CarTest {
         System.out.println("New Cars:");
         System.out.println(filter(carList, new CarNewPredicate()));
 
+        CarPredicate carFastPredicate = (Car car) -> car.getTopSpeed() > 160;
+        System.out.println("Fast Cars:");
+        System.out.println(filter(carList, carFastPredicate));
+
+        System.out.println("New Cars:");
+        System.out.println(filter(carList, car -> car.getYear() > 2015));
 
     }
 
