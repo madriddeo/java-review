@@ -2,16 +2,13 @@ import java.util.ArrayList;
 
 public class Team<T extends Player> {
 
+    @lombok.Getter
     private String name;
 
     private ArrayList<T> members = new ArrayList<>();
 
     public Team(String name) {
         this.name = name;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public boolean addPlayer(T player){
