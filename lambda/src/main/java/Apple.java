@@ -1,5 +1,5 @@
 
-public class Apple {
+public class  Apple {
 
     private int weight;
     private Color color;

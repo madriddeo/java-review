@@ -17,9 +17,9 @@ public class SetReview {
         Set<Integer> numSet=new HashSet<>();
         numSet.add(1);
         numSet.add(2);
-        //System.out.println(numSet);
-        //System.out.println(numSet.add(2));
-        // System.out.println("first repeating:  " +firstRepeatingChar("java developer"));
+        System.out.println(numSet);
+        System.out.println(numSet.add(2));
+        System.out.println("first repeating:  " +firstRepeatingChar("java developer"));
     }
     public static Character firstRepeatingChar(String str){
         //Create a hashmap

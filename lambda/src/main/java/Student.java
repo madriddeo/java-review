@@ -2,14 +2,14 @@ import lombok.*;
 
 import java.util.Objects;
 
-//@NoArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 @Data
-//@Getter
-//@Setter
-//@ToString
-//@EqualsAndHashCode
-//@RequiredArgsConstructor
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
+@RequiredArgsConstructor
 public class Student {
 
     private String firstName;
@@ -18,7 +18,7 @@ public class Student {
     private String email;
     private String password;
     private String confirmPassword;
-//    private final int age;
+    private int age;
 
 
 }
