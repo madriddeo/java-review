@@ -1,15 +1,14 @@
 import lombok.*;
 
-import java.util.Objects;
 
-@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor
+@AllArgsConstructor //(AccessLevel.PRIVATE)
 @Data
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor
+//@Getter
+//@Setter
+//@ToString
+//@EqualsAndHashCode
+//@RequiredArgsConstructor
 public class Student {
 
     private String firstName;
